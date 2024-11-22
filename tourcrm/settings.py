@@ -48,11 +48,13 @@ MIDDLEWARE = [
      'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
      'django.middleware.security.SecurityMiddleware',
+     "whitenoise.middleware.WhiteNoiseMiddleware",
 
 ]
 
 # URL configuration
 ROOT_URLCONF = 'tourcrm.urls'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Templates
 TEMPLATES = [
